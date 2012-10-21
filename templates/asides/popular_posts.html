@@ -1,0 +1,10 @@
+<section>
+  <h1>Popular Posts</h1>
+  <ul id="recent_posts">
+    {% for post in site.popular_posts limit: site.popular_posts_count %}
+      <li class="post">
+        <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
