@@ -51,6 +51,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  PageRankr
-  jekyll
-  rspec
+  PageRankr (~> 3.2.1)
+  jekyll (~> 0.11.2)
+  rspec (~> 2.11.0)
