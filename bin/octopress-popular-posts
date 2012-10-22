@@ -1,2 +1,2 @@
 #!/usr/bin/env ruby
-require './lib/popular_posts'
+require File.expand_path(File.dirname(__FILE__) + '/../lib/popular_posts')
