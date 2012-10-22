@@ -1,6 +1,6 @@
 # Octopress Popular Posts Plugin
 
-Popular posts plugin adds a popular posts asides section to your Octopress blog. Popularity of the post is calculated by the Google page rank.
+Popular posts plugin adds a popular posts asides section to your [Octopress](http://octopress.org) blog. Popularity of the post is calculated by the [Google page rank](http://en.wikipedia.org/wiki/PageRank).
 
 ## How it works
 
@@ -44,7 +44,7 @@ No additional steps are necesary.
 
 ## Post install configurations
 
-In your blog's ___config.yml__, add this line.
+In your blog's __config.yml__, add this line.
 
 ```
 popular_posts_count: 5      # Posts in the sidebar Popular Posts section
@@ -93,8 +93,8 @@ bundle exec octopress-popular-posts remove
 You will also need to remove the following configurations
 
 1. The octopress-popular-posts gem from your __Gemfile__
-2. The __popular_posts_count__ variable from your ___config.yml__
-3. The popular_posts asides under __defaults_asides__ from your ___config.yml__
+2. The __popular_posts_count__ variable from your __config.yml__
+3. The popular posts asides under __defaults_asides__ from your __config.yml__
 
 ## Other themes and plugins
 
@@ -102,4 +102,4 @@ Shameless plug: more themes and plugins are available on [Octopress themes](http
 
 ## Copyright
 
-Copyright &copy 2012 Wong Liang Zan. MIT License
+Copyright &copy 2012 [Wong Liang Zan](http://liangzan.net). MIT License
