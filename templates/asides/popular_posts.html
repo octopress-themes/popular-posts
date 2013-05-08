@@ -1,10 +1,13 @@
 <section>
   <h1>Popular Posts</h1>
   <ul id="recent_posts">
-    {% for post in site.popular_posts limit: site.popular_posts_count %}
+    {% capture num_iterations %}{{ site.popular_posts_count | plus: site.popular_posts_excluded.size }}{% endcapture %}
+    {% for post in site.popular_posts limit: num_iterations %}
+		{% unless site.popular_posts_excluded contains post.url %}
       <li class="post">
         <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
       </li>
+		{% endunless %}
     {% endfor %}
   </ul>
 </section>
